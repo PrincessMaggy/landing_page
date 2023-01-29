@@ -16,10 +16,10 @@ const menuToggle = () =>{
          <div className='navContainer'>
             <h2><Link id="logo" to="/newapp" className='navlink'>NewApp</Link> </h2>
          <nav>
-            <Link  className='navlink' to="/newapp">About Us</Link> 
-            <Link  className='navlink' to="/newapp">Careers</Link> 
-            <Link  className='navlink' to="/newapp">Products</Link> 
-            <Link  className='navlink' to="/newapp">Contact Us</Link> 
+            <Link  className='navlink' to="/about">About Us</Link> 
+            <Link  className='navlink' to="/career">Careers</Link> 
+            <Link  className='navlink' to="/products">Products</Link> 
+            <Link  className='navlink' to="/contact">Contact Us</Link> 
             <div>
                 <button className='navbtn'>Get Started</button>
             </div>
