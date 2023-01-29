@@ -25,25 +25,25 @@ function Footer() {
       </div>
 
       <div className="footerright">
-            <div classname="company">
+            <div className="company">
               <p className="linkTitle">Company</p>
               <Link  className='footerlink' to="/about">About Us</Link> 
               <Link  className='footerlink' to="/career">Career</Link>
               <Link  className='footerlink' to="/business">Business</Link> 
             </div>
-            <div classname="support">
+            <div className="support">
               <p className="linkTitle">Support</p>
               <Link  className='footerlink' to="/policies">Policies </Link> 
               <Link  className='footerlink' to="/learn">Learn</Link> 
               <Link  className='footerlink' to="/faq">FAQ</Link>
             </div>
-            <div classname="products">
+            <div className="products">
               <p className="linkTitle">Products</p>
               <Link  className='footerlink' to="/giftcard">Gift Cards</Link> 
               <Link  className='footerlink' to="/giftcard">Airtime To Cash</Link> 
               <Link  className='footerlink' to="/refill">Refill</Link>
             </div>
-            <div classname= "contact">
+            <div className= "contact">
               <p className="linkTitle">Contact</p>
               <Link  className='footerlink' to="/newapp">hello@newapp.com </Link> 
               {/*icons  */}

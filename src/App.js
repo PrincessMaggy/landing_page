@@ -11,7 +11,7 @@ function App() {
          <BrowserRouter>
           
               <Routes>
-                <Route path='/' element={<Home />} />
+                <Route path='/newapp' element={<Home />} />
                 
               </Routes>
 
