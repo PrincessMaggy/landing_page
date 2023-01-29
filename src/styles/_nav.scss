@@ -20,7 +20,8 @@
         #logo{
             font-size: 1.5rem;
             font-weight: bold;
-            color: #3B2DA8;
+            // color: #3B2DA8;
+            color: white;
             text-decoration: none;
             // font-size: 14px;
         }
@@ -49,9 +50,11 @@
                 position: static;
             }
             .navlink{
-                color: #3B2DA8;
+                // color: #3B2DA8;
+                color: white;
                 text-decoration: none;
                 font-size: 16px;
+                font-weight: 700;
             }
             .navbtn{
                 padding: 0.7em;
@@ -61,6 +64,8 @@
                 border-radius: 5px;
                 cursor: pointer;
                 outline: none;
+                width: 12em;
+        height: 4em;
                 transition: 0.3s ease;
                 &:hover{
                     border: 1px solid transparent;

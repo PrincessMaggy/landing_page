@@ -1,8 +1,8 @@
 .footer{
     display: flex;
     background-color: #f9fafc;
-    height: 50vh;
-    padding-top: 10vh;
+    height: 40vh;
+    padding: 10vh 3em 0 2em;
 }
 .footerleft{
     padding: 0 3em 0 3em;
@@ -14,6 +14,7 @@
     }
     p{
         width: 70%;
+        line-height: 1.7em;
     }
 }
 .footerbtn button{
