@@ -16,7 +16,7 @@ function Home() {
                 <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.dapibus ultricies neque sed rhoncus. Integer consequat aliquet aliquet. Quisque aliquam feugiat mauris, eu fringilla dolor eleifend id. Proin nibh dui, dictum nec enim eu, posuere dapibus nulla. Proin interdu
-          m condimentum sollicitudin. Ut eros nunc, mattis et mattis nec, viverra eu enim. Aenean fermentum egestas eros. Pellentesque non tellus nisi. Duis convallis ex id dui viverra molestie id at dolor. Nam et libero at </p>
+          viverra eu enim. Aenean fermentum egestas eros. Pellentesque non tellus nisi. Duis convallis ex id dui viverra molestie id at dolor. Nam et libero at </p>
               
               <button className='navbtn'>Get Started</button>
           </div>

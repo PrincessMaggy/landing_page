@@ -1,106 +1,109 @@
 .Nav{
     height: 5em;
     padding: 0 1.5rem;
-    align-items: center;
-    // width: 100%;
+    transition: 0.3s ease;
     @include breakpoint(md){
         padding: 0 3rem;
     }
-    transition: 0.3s ease;
-    .navContainer{
-        overflow: hidden;
-        max-width: 1920px;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        z-index: 100;
-        margin: 0 auto;
-        #logo{
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: #3B2DA8;
-            text-decoration: none;
-            margin: 0;
-            padding: 0;
-            // font-size: 14px;
-        }
-        nav{
-            top: 0;
-            right: 100%;
-            width: 100%;
-            height: 40vh;
-            position: fixed;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            // background-color: #6a0dad;
-            backdrop-filter: blur(2px);
-            transform: translate(0);
-            transition: 0.3s ease transform;
-            @include breakpoint(md){
-                transform: none;
-                flex-direction: row;
-                background: transparent;
-                justify-content: space-between;
-                height: 100%;
-                padding: 0.5rem 4rem 0 16rem;
-                position: static;
-            }
-            .navlink{
-                color: #3B2DA8;
-                text-decoration: none;
-                font-size: 14px;
-            }
-            .navbtn{
-                padding: 0.7em;
-                background-color: #ff631c;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                outline: none;
-                width: 12em;
-        height: 4em;
-                transition: 0.3s ease;
-                &:hover{
-                    border: 0.5px solid transparent;
-                    border-color: #ff631c;
-                    background-color: white;
-                    color: #ff631c;
-                }
-                &:active{
-                    background: linear-gradient(rgba(255, 99, 28, 0.2), rgba(255, 99, 28, 0.3)) ;
-                    border: 1px solid transparent;
-                    border-color:  #ff631c;
-                }
-            }
-            &.isMenu{
-                transform: translate(100%);
-                
-            }
-        }
-        .toggle{
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            font-size: 2rem;
-            transition: 0.3s ease;
-            position: relative;
-            color: #6a0dad;
-            &:hover{
-                color: #6a0dad;
-            }
-            @include breakpoint(md){
-                display: none;
-                
-            }
-        }
-    }
-  
-    
-  
 }
+.navContainer{
+    overflow: hidden;
+    max-width: 1920px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    margin: 0 auto;
+}
+.navContainer #logo{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 40vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    transform: translate(0);
+    transition: 0.3s ease transform;
+    @include breakpoint(md){
+        transform: none;
+        flex-direction: row;
+        background: transparent;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0.5rem 4rem 0 16rem;
+        position: static;
+    }
+    &.isMenu{
+        transform: translate(100%);
+        
+    }
+}
+.navlink{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.navbtn{
+    padding: 0.7em;
+    background-color: #ff631c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    width: 12em;
+    height: 4em;
+    transition: 0.3s ease;
+    &:hover{
+        border: 0.5px solid transparent;
+        border-color: white;
+        background-color: inherit;
+        color: white;
+    }
+    &:active{
+        background: linear-gradient(rgba(255, 99, 28, 0.2), rgba(255, 99, 28, 0.3)) ;
+        border: 1px solid transparent;
+        border-color:  #ff631c;
+    }
+}
+
+.toggle{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    transition: 0.3s ease;
+    position: relative;
+    color: white;
+    &:hover{
+        font-size: 2.2rem;
+    }
+    @include breakpoint(md){
+        display: none;  
+    }
+}
+
+@media(min-width:900px){
+    .Nav{
+       padding-left: 4.5em;
+    }
+   }

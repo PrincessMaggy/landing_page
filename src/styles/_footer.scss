@@ -8,9 +8,14 @@
     padding: 0 3em 0 3em;
     width: 30%;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    .navlink{
+    .footerlink{
         text-decoration: none;
+    }
+    h2{
+        margin: 0;
+        padding: 0;
     }
     p{
         width: 70%;
@@ -84,5 +89,11 @@
         width: 100%;
         padding-top: 4em;
         text-align: center;
+    }
+}
+
+@media(min-width: 1000px){
+    .footer{
+        height: 60vh;
     }
 }
