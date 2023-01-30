@@ -1,13 +1,22 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
+import {motion} from 'framer-motion'
 
 function Career() {
   return (
-    <div>
+    <motion.div
+    initial={{width: 0}}
+      animate={{width: "100%"}}
+      exit={{x:window.innerWidth,transition:{duration:0.1}}}>
            <Nav/>
+           <motion.div
+           initial={{opacity:0}}
+            animate={{opacity:1}}
+            exit={{opacity:0}}>
+           </motion.div>
           <Footer/>
-    </div>
+    </motion.div>
   )
 }
 

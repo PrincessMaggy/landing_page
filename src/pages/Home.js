@@ -3,15 +3,25 @@ import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 // import heroimg from '../img/home-hero.png'
 import Join from '../components/Join';
+import {motion} from 'framer-motion'
 
 
 function Home() {
   return (
     <div>
-      <div className='home'>
+      <motion.div 
+         className='home'
+      initial={{width: 0}}
+      animate={{width: "100%"}}
+      exit={{x:window.innerWidth, transition:{duration:0.1}}}
+   >
         <div className="main">
             <Nav/>
-            <div className="hero">
+            <motion.div 
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            exit={{opacity:0}}
+            className="hero">
               <div className="hero-left">
                 <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
 
@@ -22,11 +32,11 @@ function Home() {
           </div>
             <div className="hero-right">
               </div>
-            </div>
+            </motion.div>
         </div>
           <Join/>
           <Footer/>
-      </div>
+      </motion.div>
     </div>
   )
 }
