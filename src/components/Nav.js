@@ -14,12 +14,12 @@ const menuToggle = () =>{
   return (
     <div className='Nav'>
          <div className='navContainer'>
-            <h2><Link id="logo" to="/newapp" className='navlink'>NewApp</Link> </h2>
-         <nav>
-            <Link  className='navlink' to="/newapp">About Us</Link> 
-            <Link  className='navlink' to="/newapp">Careers</Link> 
-            <Link  className='navlink' to="/newapp">Products</Link> 
-            <Link  className='navlink' to="/newapp">Contact Us</Link> 
+            <h2><Link id="logo" to="/" className='navlink'>NewApp</Link> </h2>
+         <nav className={!menuOpen ? "" :'isMenu'}>
+            <Link  className='navlink' to="/">About Us</Link> 
+            <Link  className='navlink' to="/">Careers</Link> 
+            <Link  className='navlink' to="/">Products</Link> 
+            <Link  className='navlink' to="/">Contact Us</Link> 
             <div>
                 <button className='navbtn'>Get Started</button>
             </div>
