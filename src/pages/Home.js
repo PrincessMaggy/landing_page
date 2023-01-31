@@ -1,10 +1,16 @@
 import React from 'react';
+// components
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
-// import heroimg from '../img/home-hero.png'
+import Card from '../components/Card';
 import Join from '../components/Join';
+
+// import heroimg from '../img/home-hero.png'
 import {motion} from 'framer-motion'
 
+// icons
+import { IconContext } from 'react-icons/lib';
+import {IoStar} from 'react-icons/io5'
 
 function Home() {
   return (
@@ -25,15 +31,26 @@ function Home() {
               <div className="hero-left">
                 <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.dapibus ultricies neque sed rhoncus. Integer consequat aliquet aliquet. Quisque aliquam feugiat mauris, eu fringilla dolor eleifend id. Proin nibh dui, dictum nec enim eu, posuere dapibus nulla. Proin interdu
-          viverra eu enim. Aenean fermentum egestas eros. Pellentesque non tellus nisi. Duis convallis ex id dui viverra molestie id at dolor. Nam et libero at </p>
-              
-              <button className='navbtn'>Get Started</button>
+                <p>Lorem ipsum dolultricies neque sed rhoncus. Integer consequat aliquet aliquet. Quisque aliquam feugiat mauris, eu fringilla dolor eleifend id. Proin nibh dui, dictum nec enim eu, posuere dapibus nulla. Proin interdu </p>
+                <button className='navbtn'>Get Started</button>
+                <div className='review_container'>
+                  <p className='total_review'>64+ reviews</p>
+                  <IconContext.Provider value={{color:"#fff", size: "18px"}}>
+                      <span><IoStar/></span>
+                      <span><IoStar/></span>
+                      <span><IoStar/></span>
+                      <span><IoStar/></span>
+                      <span><IoStar/></span>
+                  </IconContext.Provider>
+                  {/* <p className='more_review'>More than 500+ people patronizing our services</p> */}
+              </div>
+             
           </div>
             <div className="hero-right">
               </div>
             </motion.div>
         </div>
+          <Card/>
           <Join/>
           <Footer/>
       </motion.div>

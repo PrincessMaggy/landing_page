@@ -6,8 +6,15 @@
         }
     }
 }
-
+.dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+@import './home';
 @import './nav';
 @import './join';
+@import './card';
 @import './footer';
-@import './home'

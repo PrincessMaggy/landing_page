@@ -1,6 +1,6 @@
 .footer{
     display: flex;
-    background-color: #f9fafc;
+    background-color: rgba(249, 250, 252, 0.2);
     height: 40vh;
     padding: 10vh 3em 0 2em;
 }
@@ -24,7 +24,7 @@
 }
 .footerbtn button{
     padding: 0.7em;
-    color: #3B2DA8;
+    color: #6a0dad;
     background-color: white;
     box-shadow: 5px 5px #e9eaec;
     height: 5em;
@@ -60,7 +60,7 @@
 .footerlink{
     display: block;
     text-decoration: none;
-    color: #3B2DA8;
+    color: #333;
     padding-bottom: 1em;
     transition: 0.3s ease;
     cursor: pointer;

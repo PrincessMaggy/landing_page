@@ -3,7 +3,7 @@
     padding: 0;
 }
 .main{
-    background-color: #3B2DA8;
+    background-color: #6a0dad;
 }
 .hero{
     height: 70vh;
@@ -22,7 +22,7 @@
     button{
         border: none;
         width: 12em;
-        height: 4em;
+        height: 3em;
         color: white;
         background-color: #ff631c;
         transition: 0.3 ease;
@@ -38,6 +38,34 @@
 .hero-left{
     padding-left: 4em;
     width: 40%;
+}
+.review_container{
+    margin-top: 20px;
+    p.total_review{
+        font-weight: 700;
+        font-size: 20px;
+        //color: black;
+        margin: 0;
+    }
+    p.more_review{
+        font-weight: 400;
+        font-size: 16px;
+        //color: #333;
+        // margin: 20px 0 0;
+    }
+    span{
+        display: inline-flex;
+        @extend .dflex;
+        width: 30px;
+        height: 30px;
+        background-color: #ff631c;
+        border-radius: 8px;
+        // margin-top: 10px;
+        +span{
+            margin-left: 8px;
+
+        }
+    }
 }
 .hero-right{
     background: url(../img/home-hero.png);

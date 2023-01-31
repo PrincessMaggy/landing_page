@@ -1,5 +1,5 @@
 .Join{
-    background-color: #fae3d8;
+    background-color: rgba(255, 99, 28, 0.1);
     padding:  0 0 0 5em;
     display: flex;
     height:70vh;
@@ -24,14 +24,14 @@
         width: 12em;
         height: 4em;
         color: white;
-        background-color: #3B2DA8;
+        background-color: #ff631c;
         transition: 0.3 ease;
         border-radius: 5px;
         cursor: pointer;
         &:hover{
             background: inherit;
-            border: 0.5px #3B2DA8 outset;
-            color: #3B2DA8;
+            border: 0.5px #ff631c outset;
+            color: #ff631c;
         }
     }
 }
