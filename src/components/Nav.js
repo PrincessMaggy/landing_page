@@ -3,7 +3,7 @@ import { useState } from 'react';
 import {BiMenuAltRight} from 'react-icons/bi';
 import {AiOutlineClose} from 'react-icons/ai';
 import {Link} from 'react-router-dom';
-import {motion} from 'framer-motion'
+import {motion, AnimatePresence} from 'framer-motion'
 
 function Nav() {
 const [menuOpen, menuClose] = useState(false)
@@ -55,6 +55,17 @@ const btnGroup ={
   }
 }
 
+const item={
+  exit:{
+    opacity:0,
+    height:0,
+    transition:{
+      ease:"easeInOut",
+      duration:0.3,
+      delay:1.2
+    }
+  }
+}
 
   return (
     <motion.div 
@@ -62,29 +73,99 @@ const btnGroup ={
     className="Nav"
     animate='animate'
     >
-         <motion.div variants={stagger} className='navContainer'>
-            <motion.h2 variants={header}><Link id="logo" to="/newapp" className='navlink'>Logo</Link> </motion.h2>
-         <motion.nav variants={stagger} className={!menuOpen ? "" :'isMenu'}>
-            <div><Link  className='navlink' to="/about">About Us</Link> </div>
-            <Link  className='navlink' to="/career">Careers</Link> 
-            <Link  className='navlink' to="/products">Products</Link> 
-            <Link  className='navlink' to="/contact">Contact Us</Link> 
-            <motion.div 
-            variants={btnGroup}
-         whileHover={{scale:1.05}}
-         whileTap={{scale:0.95}}
-         >
-                <button className='navbtn'>Get Started</button>
-            </motion.div>
-         </motion.nav>
+    <AnimatePresence>
+        { menuClose && (
+          <motion.div variants={stagger} className='navContainer'>
+            <motion.h2 variants={header}>
+                  <Link id="logo" to="/newapp" className='navlink'>Logo</Link> 
+            </motion.h2>
+            <motion.nav 
+            //  variants={header}  
+            className={!menuOpen ? "" :'isMenu'}>
+            <motion.ul>
+                <motion.li 
+                  initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.8}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:1
+                        }
+                    }}><Link  className='navlink' to="/about">About Us</Link> </motion.li>
+
+                <motion.li
+                className='li'
+                 initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.7}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.8
+                        }
+                    }}><Link  className='navlink' to="/career">Careers</Link> </motion.li>
+
+                <motion.li
+                className='li'
+                 initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.6}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.6
+                        }
+                    }}><Link  className='navlink' to="/products">Products</Link> </motion.li>
+
+                <motion.li 
+                className='li'
+                initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.5}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.4
+                        }
+                    }}><Link  className='navlink' to="/contact">Contact Us</Link> </motion.li>
+
+
+                <motion.div 
+                variants={btnGroup}
+            whileHover={{scale:1.05}}
+            whileTap={{scale:0.95}}
+            >
+                    <button className='navbtn'>Get Started</button>
+                </motion.div>
+                </motion.ul>
+            </motion.nav>
+
+
          <motion.div 
-         variants={header} 
-         className='toggle'
+              variants={item}
+              initial={{height:0,opacity:0}}
+              animate={{height:"100vh", opacity:1}}
+              transition={{duration:.5}}
+              exit="exit"
+              className='toggle'
          >
-         {!menuOpen?  (<BiMenuAltRight onClick={menuToggle}/>) : (<AiOutlineClose  onClick={menuToggle} />) }
+         {!menuOpen?  (
+          <BiMenuAltRight onClick={menuToggle}/>) : (<AiOutlineClose  onClick={menuToggle} />) }
            
          </motion.div>
         </motion.div>
+        )}
+         
+        </AnimatePresence>
     </motion.div>
     
   )

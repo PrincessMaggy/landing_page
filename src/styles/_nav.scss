@@ -52,6 +52,21 @@ nav{
         transform: translate(100%);
         
     }
+    ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        @include breakpoint(md){
+            flex-direction: column;
+        }
+        @media(max-width:768px){
+            flex-direction: column;
+            height: 100%;
+        align-content: space-between;        }
+    }
+    li{
+        list-style: none;
+    }
 }
 .navlink{
     color: white;
