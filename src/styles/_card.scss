@@ -41,7 +41,7 @@
         border: 1px solid #f0f0f0;
         border-radius: 8px;
         background-color: white;
-        padding: 2.8vw 3.8vw;
+        padding: 2.8vw 3.4vw;
         height: 16.67vw;
         position: relative;
         top: 0;
@@ -83,6 +83,21 @@
             font-size: 1.5vw;
             font-weight: 600;
             color: black;
+            text-transform: capitalize;
+        }
+        a{
+            display: inline-flex;
+            justify-content: flex-start;
+            font-size: 0.94vw;
+            color:#ff631c;
+            text-decoration: none;
+            align-items: center;
+            span{
+                margin-right: 8px;
+            }
+            svg{
+                margin-top: 3px;
+            }
         }
     }
 } 

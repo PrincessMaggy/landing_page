@@ -35,7 +35,7 @@
     transition: 0.3s ease;
     margin-right: 15px;
     &:hover{
-        // border: 1px solid transparent;
+        border: 1px solid transparent;
     }
     &:active{
         background: linear-gradient(rgba(59, 45, 168, 0.2), rgba(59, 45, 168, 0.3)) ;
@@ -94,6 +94,6 @@
 
 @media(min-width: 1000px){
     .footer{
-        height: 60vh;
+        height: 80vh;
     }
 }

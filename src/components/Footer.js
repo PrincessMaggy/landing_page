@@ -49,7 +49,7 @@ function Footer() {
               {/*icons  */}
             </div>
       </div>
-  
+  {/* <p>(c) newapp 2023</p> */}
       
     </div>
   )

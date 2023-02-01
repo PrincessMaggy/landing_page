@@ -8,9 +8,10 @@ import {motion} from 'framer-motion'
 
 function About() {
   return (
-    <motion.div initial={{width: 0}}
-    animate={{width: "100%"}}
-    exit={{x:window.innerWidth,transition:{duration:0.1}}}
+    <motion.div 
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}
     className="About">
          <Nav/>
          <motion.div 
