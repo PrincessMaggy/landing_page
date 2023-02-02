@@ -10,6 +10,8 @@ const [menu, setMenu] = useState(false);
 
 const [navbar, setNavbar] = useState(false);
 
+let val
+
 const changeBackground = ()=>{
   console.log(window.scrollY)
   if(window.scrollY > 70){
@@ -85,6 +87,7 @@ const item={
     <motion.div 
     initial= 'initial' 
     className={navbar ? "Nav active" :'Nav'}
+    style={{height: !menu ? '5em':'80vh'}}
     animate='animate'
     >
     <AnimatePresence>

@@ -10,6 +10,7 @@
    &.active{
     background-color: white;
     z-index:1000;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
     .navContainer #logo,.navlink,.toggle{
         color: rgb(106, 13, 173);
         font-weight: 700;
@@ -17,9 +18,6 @@
    }
     @media (max-width:768px){
         padding: 0 3rem;
-        // &.menuOpen{
-            height: 60vh;
-        // }
         
     }
 }
@@ -79,11 +77,12 @@ nav{
         flex-direction: column;
         transform: translate(0);
         display: none;
-        justify-content: center;
-        height: 40vh;
+        // justify-content: center;
+        height: 50vh;
         &.menuOpen{
-            transform: translate(100);
+            // transform: translate(100);
             display: flex;
+            text-align: left;
         }
     }
     ul{
