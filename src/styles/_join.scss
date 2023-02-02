@@ -1,5 +1,9 @@
 .Join{
     background-color: rgba(255, 99, 28, 0.1);
+    background:url('../img/bg-pattern-intro.svg') left, linear-gradient(to right,
+    rgba(255, 99, 28, 0.1), 
+    rgba(255, 99, 28, 0.1)
+     );
     padding:  0 0 0 5em;
     display: flex;
     height:70vh;
@@ -34,7 +38,7 @@
         width: 12em;
         height: 4em;
         color: white;
-        background-color: #ff631c;
+        background-color: #ff6e65;
         transition: 0.3 ease;
         border-radius: 5px;
         cursor: pointer;
@@ -57,10 +61,10 @@
     }
 }
 .join-right{
-    background: url(../img/services.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    // background: url(../img/services.png);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
     height: inherit;
     width: 60%;
 }
