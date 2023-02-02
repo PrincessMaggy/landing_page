@@ -12,7 +12,7 @@
 .join-left{
     width: 40%;
     h1{
-        font-size: 3.2rem;
+        font-size: 2.7rem;
         font-weight: 700;
         color: rgb(106, 13, 173);
         text-transform: uppercase;
@@ -21,7 +21,8 @@
         line-height: 1.7em;
         margin-bottom: 2em;
         @media(min-width:769px){
-    line-height: 3em;
+            line-height: 3em;
+            font-size: 1.2rem;
         }
             @media(min-width:1850px){
                 
@@ -61,10 +62,13 @@
     }
 }
 .join-right{
-    // background: url(../img/services.png);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // background-position: center;
+    @media(max-width:768px){
+        background: url(../img/services.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+   
     height: inherit;
     width: 60%;
 }
