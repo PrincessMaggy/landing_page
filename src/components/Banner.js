@@ -58,7 +58,8 @@ function Banner() {
                       <button className='navbtn'>Get Started</button>
                       </motion.div>
                     <motion.div className='review_container' variants={stagger}>
-                      <motion.p  className='total_review'>64+ reviews</motion.p>
+                      {/* <motion.p  className='total_review'>64+ reviews</motion.p> */}
+                      <p className='more_review'>64+ reviews</p>
                       <IconContext.Provider value={{color:"#fff", size: "18px"}}>
                           <motion.span whileHover={{scale:1.2, rotate:180, borderRadius:"100%", cursor:'pointer'}}><IoStar/></motion.span>
                           <motion.span whileHover={{scale:1.2, rotate:180, borderRadius:"100%", cursor:'pointer'}}><IoStar/></motion.span>
@@ -67,6 +68,7 @@ function Banner() {
                           <motion.span whileHover={{scale:1.2, rotate:180, borderRadius:"100%", cursor:'pointer'}}><IoStar/></motion.span>
                       </IconContext.Provider>
                       <p className='more_review'>More than 500+ people patronizing our services</p>
+
                   </motion.div>
                  
               </div>
