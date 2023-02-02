@@ -11,6 +11,14 @@
     color: white;
     justify-content: space-between;
     padding: 0 4em 0 2em;
+    @media(min-width:769px){
+    height: 50vh;
+    }
+        @media(min-width:1850px){
+            
+        }
+      
+    
     h1{
         font-weight: 700;
         font-size: 4.3rem;
@@ -18,16 +26,33 @@
     p{
         line-height: 1.7em;
         margin-bottom: 2em;
+        @media(min-width:769px){
+    line-height: 2.1em;
+    font-size: 1.3rem;
+        }
+            @media(min-width:1850px){
+                
+            }
+          
+        
     }
     button{
         border: none;
-        width: 12em;
+        width: 10em;
         height: 3em;
         color: white;
         background-color: #ff631c;
         transition: 0.3 ease;
         border-radius: 5px;
         cursor: pointer;
+        @media(min-width:769px){
+            font-size: 1.2rem;
+        }
+            @media(min-width:1850px){
+                
+            }
+          
+        
         &:hover{
             background: inherit;
             border: 0.5px white outset;
@@ -41,15 +66,9 @@
 }
 .review_container{
     margin-top: 20px;
-    p.total_review{
-        font-weight: 700;
-        font-size: 20px;
-        //color: black;
-        margin: 0;
-    }
     p.more_review{
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1.2rem;
         //color: #333;
         // margin: 20px 0 0;
     }

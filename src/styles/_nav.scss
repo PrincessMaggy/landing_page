@@ -34,6 +34,7 @@
 .navContainer #logo{
     color: white;
     text-decoration: none;
+    font-size: 2.3rem;
 }
 .toggle{
     display: none;
@@ -94,7 +95,7 @@ nav{
     .navlink{
         color: white;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 1.2rem;
         transition: 0.3s ease;
         &:hover{
             text-decoration: underline;
@@ -109,13 +110,21 @@ nav{
     border-radius: 5px;
     cursor: pointer;
     outline: none;
-    width: 12em;
+    width: 10em;
     height: 3em;
     transition: 0.3s ease all;
     @media(max-width:768px){
         margin: 0;
         padding: 0;
     }
+    @media(min-width:769px){
+    font-size: 1.2rem;
+    }
+        @media(min-width:1850px){
+            
+        }
+      
+    
     &:hover{
         border: 0.5px solid transparent;
         border-color: white;

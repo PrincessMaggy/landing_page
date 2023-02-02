@@ -1,4 +1,25 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+
+let easing = [0.6, -0.05, 0.01, 0.99];
+
+const btnGroup ={
+  initial:{
+    y:-60,
+    opacity:0,
+    transition:{duration:0.05, ease:easing}
+  },
+  animate:{
+    y:0,
+    opacity:1,
+    animation:{
+      duration:0.6,
+      ease:easing
+    }
+  }
+}
+
+
 
 function Join() {
   return (
@@ -14,7 +35,10 @@ function Join() {
               <li>Lorem ipsum</li>
             </ul>
 
-            <button>Join the waitlist</button>
+            <motion.button
+             variants={btnGroup}
+            whileHover={{scale:1.05}}
+            whileTap={{scale:0.95}}>Join the waitlist</motion.button>
           </div>
           <div className="join-right">
 

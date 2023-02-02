@@ -3,6 +3,15 @@
     background-color: rgba(249, 250, 252, 0.2);
     height: 40vh;
     padding: 10vh 3em 0 2em;
+@media(min-width:769px){
+        height: 60vh;
+        align-items:center;
+        align-content: center;
+        padding-top: 1vh;
+}
+    @media(min-width:1850px){
+            height: 80vh;
+        }
 }
 .footerleft{
     padding: 0 3em 0 3em;
@@ -20,6 +29,15 @@
     p{
         width: 70%;
         line-height: 1.7em;
+        @media(min-width:769px){
+            line-height: 2em;
+            margin-bottom: 2em;
+        }
+            @media(min-width:1850px){
+                
+            }
+          
+        
     }
 }
 .footerbtn button{
@@ -34,11 +52,19 @@
     outline: none;
     transition: 0.3s ease;
     margin-right: 15px;
+    @media(min-width:769px){
+    font-size: 1.2rem;
+    }
+        @media(min-width:1850px){
+            
+        }
+      
+    
     &:hover{
-        border: 1px solid transparent;
+        // border: 1px solid transparent;
     }
     &:active{
-        background: linear-gradient(rgba(59, 45, 168, 0.2), rgba(59, 45, 168, 0.3)) ;
+        // background: linear-gradient(rgba(59, 45, 168, 0.2), rgba(59, 45, 168, 0.3)) ;
         // border: 1px solid transparent;
     }
     span{
@@ -56,6 +82,24 @@
 }
 .linkTitle{
     font-weight: 700;
+    text-transform: uppercase;
+    @media(min-width:769px){
+    margin-bottom:3em;
+    }
+        @media(min-width:1850px){
+            
+        }
+      
+    
+}
+.footerlogo{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 0.5em;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 .footerlink{
     display: block;
@@ -64,6 +108,15 @@
     padding-bottom: 1em;
     transition: 0.3s ease;
     cursor: pointer;
+    text-transform: uppercase;
+    @media(min-width:769px){
+    height: 3em;
+    }
+        @media(min-width:1850px){
+            
+        }
+      
+    
     &:hover{
         text-decoration: underline;
     }
@@ -89,11 +142,5 @@
         width: 100%;
         padding-top: 4em;
         text-align: center;
-    }
-}
-
-@media(min-width: 1000px){
-    .footer{
-        height: 80vh;
     }
 }

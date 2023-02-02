@@ -10,10 +10,20 @@
     h1{
         font-size: 3.2rem;
         font-weight: 700;
+        color: rgb(106, 13, 173);
+        text-transform: uppercase;
     }
     p{
         line-height: 1.7em;
         margin-bottom: 2em;
+        @media(min-width:769px){
+    line-height: 3em;
+        }
+            @media(min-width:1850px){
+                
+            }
+          
+        
     }
     ul li{
         list-style:georgian;
@@ -28,6 +38,17 @@
         transition: 0.3 ease;
         border-radius: 5px;
         cursor: pointer;
+        @media(min-width:769px){
+            width: 10em;
+            height: 3em;
+            font-size: 1.2rem;
+            margin-top: 2em;
+        }
+            @media(min-width:1850px){
+                
+            }
+          
+        
         &:hover{
             background: inherit;
             border: 0.5px #ff631c outset;
