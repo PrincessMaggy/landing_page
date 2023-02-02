@@ -1,6 +1,7 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import Nav from '../components/Nav';
+import Form from '../components/Form';
+import Footer from '../components/Footer';
 import {motion} from 'framer-motion'
 
 function Contact() {
@@ -15,8 +16,9 @@ function Contact() {
            initial={{opacity:0}}
             animate={{opacity:1}}
             exit={{opacity:0}}
-            >
+            ><Form/>
            </motion.div>
+           
           <Footer/>
     </motion.div>
   )

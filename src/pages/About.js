@@ -1,6 +1,7 @@
+import Nav from '../components/Nav';
 import React from 'react';
 import Footer from '../components/Footer';
-import Nav from '../components/Nav';
+import Features from '../components/Features';
 import {motion} from 'framer-motion'
 
 
@@ -8,10 +9,7 @@ import {motion} from 'framer-motion'
 
 function About() {
   return (
-    <motion.div 
-    // initial={{opacity:0}}
-    // animate={{opacity:1}}
-    // exit={{opacity:0}}
+    <div 
     className="About">
          <Nav/>
          <motion.div 
@@ -19,10 +17,10 @@ function About() {
             animate={{opacity:1}}
             exit={{opacity:0}}
             >
-
          </motion.div>
+         <Features/>
           <Footer/>
-    </motion.div>
+    </div>
   )
 }
 

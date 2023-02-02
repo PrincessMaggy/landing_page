@@ -1,11 +1,14 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import Nav from '../components/Nav';
+import Pricing from '../components/Pricing';
+import Footer from '../components/Footer';
+
 
 function Products() {
   return (
     <div>
            <Nav/>
+           <Pricing/>
           <Footer/>
     </div>
   )

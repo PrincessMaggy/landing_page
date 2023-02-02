@@ -10,10 +10,8 @@ const [menu, setMenu] = useState(false);
 
 const [navbar, setNavbar] = useState(false);
 
-let val
 
 const changeBackground = ()=>{
-  console.log(window.scrollY)
   if(window.scrollY > 70){
     setNavbar(true);
   }else{

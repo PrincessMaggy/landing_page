@@ -1,6 +1,7 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import Nav from '../components/Nav';
+
+import Footer from '../components/Footer';
 import {motion} from 'framer-motion'
 
 function Career() {
@@ -16,6 +17,7 @@ function Career() {
             animate={{opacity:1}}
             exit={{opacity:0}}
             >
+  
            </motion.div>
           <Footer/>
     </motion.div>
