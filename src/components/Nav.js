@@ -6,9 +6,9 @@ import {Link} from 'react-router-dom';
 import {motion, AnimatePresence} from 'framer-motion'
 
 function Nav() {
-const [menuOpen, menuClose] = useState(false)
+const [menu, setMenu] = useState(false)
 const menuToggle = () =>{
-    menuClose((p) => !p)
+    setMenu((p) => !p)
 }
 
 // animations
@@ -74,14 +74,27 @@ const item={
     animate='animate'
     >
     <AnimatePresence>
-        { menuClose && (
+        { setMenu && (
           <motion.div variants={stagger} className='navContainer'>
+          <div className='logoham'>
             <motion.h2 variants={header}>
                   <Link id="logo" to="/newapp" className='navlink'>Logo</Link> 
             </motion.h2>
+            <motion.div 
+              variants={item}
+              initial={{height:0,opacity:0}}
+              animate={{height:"100vh", opacity:1}}
+              transition={{duration:.5}}
+              exit="exit"
+              className='toggle'
+         >
+         {!menu?  (
+          <BiMenuAltRight onClick={menuToggle}/>) : (<AiOutlineClose  onClick={menuToggle} />) }
+         </motion.div>
+         </div>
             <motion.nav 
             //  variants={header}  
-            className={!menuOpen ? "" :'isMenu'}>
+            className={!menu ? "" :'menuOpen'}>
             <motion.ul>
                 <motion.li 
                   initial={{y:80,opacity:0}}
@@ -139,6 +152,8 @@ const item={
                     }}><Link  className='navlink' to="/contact">Contact Us</Link> </motion.li>
 
 
+                
+                </motion.ul>
                 <motion.div 
                 variants={btnGroup}
             whileHover={{scale:1.05}}
@@ -146,22 +161,10 @@ const item={
             >
                     <button className='navbtn'>Get Started</button>
                 </motion.div>
-                </motion.ul>
             </motion.nav>
 
 
-         <motion.div 
-              variants={item}
-              initial={{height:0,opacity:0}}
-              animate={{height:"100vh", opacity:1}}
-              transition={{duration:.5}}
-              exit="exit"
-              className='toggle'
-         >
-         {!menuOpen?  (
-          <BiMenuAltRight onClick={menuToggle}/>) : (<AiOutlineClose  onClick={menuToggle} />) }
-           
-         </motion.div>
+         
         </motion.div>
         )}
          
