@@ -6,7 +6,21 @@ import {Link} from 'react-router-dom';
 import {motion, AnimatePresence} from 'framer-motion'
 
 function Nav() {
-const [menu, setMenu] = useState(false)
+const [menu, setMenu] = useState(false);
+
+const [navbar, setNavbar] = useState(false);
+
+const changeBackground = ()=>{
+  console.log(window.scrollY)
+  if(window.scrollY > 70){
+    setNavbar(true);
+  }else{
+    setNavbar(false);
+  }
+
+}
+window.addEventListener('scroll', changeBackground)
+
 const menuToggle = () =>{
     setMenu((p) => !p)
 }
@@ -70,7 +84,7 @@ const item={
   return (
     <motion.div 
     initial= 'initial' 
-    className="Nav"
+    className={navbar ? "Nav active" :'Nav'}
     animate='animate'
     >
     <AnimatePresence>
