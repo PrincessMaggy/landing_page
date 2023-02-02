@@ -71,24 +71,24 @@ nav{
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(2px);
-    
+  
     transition: 0.3s ease transform;
     @media (max-width:768px){
         flex-direction: column;
         transform: translate(0);
+        height: 40vh;
         display: none;
-        // justify-content: center;
         height: 50vh;
+        justify-content:flex-start;
         &.menuOpen{
-            // transform: translate(100);
+            transform: translate(100);
             display: flex;
-            text-align: left;
         }
     }
     ul{
         display: flex;
         width: 80%;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         padding: 0 4rem 0 4rem;
         list-style: none;
         justify-content: space-between;
@@ -98,9 +98,8 @@ nav{
             width: 100%;
             padding: 0;
             margin: 0;
-            height: 100%;
-            align-items: center;
-        align-content: space-between;       
+            height: 50%;
+            align-items: center;     
      }
     }
     li{
@@ -131,7 +130,7 @@ nav{
     height: 3em;
     transition: 0.3s ease all;
     @media(max-width:768px){
-        margin: 0;
+        margin: 3em 0 10px 0;
         padding: 0;
     }
     @media(min-width:769px){

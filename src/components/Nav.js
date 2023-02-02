@@ -87,7 +87,7 @@ const item={
     <motion.div 
     initial= 'initial' 
     className={navbar ? "Nav active" :'Nav'}
-    style={{height: !menu ? '5em':'80vh'}}
+    style={{height: !menu ? '5em':'60vh'}}
     animate='animate'
     >
     <AnimatePresence>
