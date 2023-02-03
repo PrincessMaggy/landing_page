@@ -40,6 +40,12 @@
         height: 15vh;
         justify-content: space-between;
     }
+    @media(min-width: 769px){
+        width: 15%;
+    }
+    @media(min-width: 1150px){
+        width: 25%;
+    }
 }
 .navContainer #logo{
     color: white;
