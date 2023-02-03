@@ -1,5 +1,5 @@
 .Nav{
-    height: 5em;
+    height: 4em;
     padding: 0 1.5rem 0 5em;
     transition: 0.3s ease;
     position: fixed;
@@ -76,9 +76,9 @@ nav{
     @media (max-width:768px){
         flex-direction: column;
         transform: translate(0);
-        height: 40vh;
         display: none;
         height: 50vh;
+        align-items: flex-start;
         justify-content:flex-start;
         &.menuOpen{
             transform: translate(100);
@@ -99,7 +99,7 @@ nav{
             padding: 0;
             margin: 0;
             height: 50%;
-            align-items: center;     
+            // align-items: center;     
      }
     }
     li{
