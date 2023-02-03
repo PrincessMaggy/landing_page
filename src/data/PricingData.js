@@ -26,7 +26,7 @@ export const pricingData = [
 			'Best for small business',
 			'Customizable',
 			'Easy Integration',
-			'Development Team',
+			// 'Development Team',
 			'DNS & Domain included',
 		],
 	},

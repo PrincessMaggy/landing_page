@@ -5,13 +5,18 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-	width: 100%;
+	width: 90%;
 	max-width: 1300px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0 50px;
+	
 	@media screen and (max-width: 960px) {
 		padding: 0 30px;
+	}
+	@media(max-width:768px){
+		width: 90%;
+		padding: 0 10px;
 	}
 `;
 export const MainHeading = styled.h1`

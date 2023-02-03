@@ -7,6 +7,7 @@ export const FeatureTitle = styled.h2`
 	line-height: 1.06;
 	letter-spacing: 0.4rem;
 	margin: auto;
+	color: white;
 `;
 
 export const FeatureTextWrapper = styled.div`
@@ -34,7 +35,7 @@ export const FeatureColumn = styled(motion.div)`
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	background: #f3f3f3;
+	background: #6a0dad;
 	padding: 10px;
 	box-shadow: 0 0 32px 8px #d0d0d0;
 	border-radius: 20px;
@@ -43,13 +44,15 @@ export const FeatureColumn = styled(motion.div)`
 export const FeatureImageWrapper = styled.div`
 	margin-bottom: 1rem;
 	border-radius: 50%;
-	border: 2px solid #000;
+	border: 2px solid #fff;
 	padding: 30px;
+	background:#fff;
 `;
 export const FeatureName = styled.h3`
 	font-weight: 600;
 	font-size: 1.3rem;
 	letter-spacing: 2px;
+	color:white;
 	@media screen and (max-width: 768px) {
 		font-weight: 400;
 		font-size: 1rem;
@@ -62,7 +65,7 @@ export const FeatureText = styled.p`
 	font-size: 0.9rem;
 	line-height: 1.73;
 	letter-spacing: 0.5px;
-	color: #626881;
+	color: #fff;
 	@media screen and (max-width: 768px) {
 		display: none;
 	}

@@ -24,6 +24,7 @@ export const PricingWrapper = styled.div`
 export const PricingContainer = styled.div`
 	display: flex;
 	justify-content: center;
+	align-items:flex-end;
 	flex-flow: wrap;
 	> div {
 		margin: 0.7rem;

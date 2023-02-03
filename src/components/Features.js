@@ -22,7 +22,7 @@ const Features = () => {
 	};
 
 	return (
-		<Section smPadding="50px 10px" position="relative" inverse id="about">
+		<Section smPadding="50px 10px" position="relative" inverse id="about" style={{marginTop:'4em',backgroundColor:'rgb(106, 13, 173)'}}>
 			<Container>
 				<FeatureTextWrapper>
 					<FeatureTitle>What We Offer</FeatureTitle>

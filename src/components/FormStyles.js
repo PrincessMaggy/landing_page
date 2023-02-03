@@ -13,6 +13,7 @@ export const FormTitle = styled.h1`
 	font-size: 48px;
 	line-height: 1.1;
 	font-weight: 600;
+	color:rgb(106, 13, 173);
 `;
 
 export const FormContainer = styled.div`
