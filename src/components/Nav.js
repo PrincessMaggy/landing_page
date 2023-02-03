@@ -150,7 +150,7 @@ const item={
                           ease:"easeInOut",
                           delay:.6
                         }
-                    }}><Link  className='navlink' to="/products">Products</Link> </motion.li>
+                    }}><Link  className='navlink' to="/products">SignUp</Link> </motion.li>
 
                 <motion.li 
                 className='li'
