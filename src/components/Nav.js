@@ -150,7 +150,7 @@ const item={
                           ease:"easeInOut",
                           delay:.6
                         }
-                    }}><Link  className='navlink' to="/products">SignUp</Link> </motion.li>
+                    }}><Link  className='navlink' to="/products">Products</Link> </motion.li>
 
                 <motion.li 
                 className='li'
@@ -164,7 +164,7 @@ const item={
                           ease:"easeInOut",
                           delay:.4
                         }
-                    }}><Link  className='navlink' to="/contact">Contact Us</Link> </motion.li>
+                    }}><Link  className='navlink' to="/contact">SignUp</Link> </motion.li>
 
 
                 
