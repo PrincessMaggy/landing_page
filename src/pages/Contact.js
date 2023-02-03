@@ -18,7 +18,7 @@ function Contact() {
             exit={{opacity:0}}
             >
               
-            <Form/>
+            {/* <Form/> */}
            </motion.div>
            
           <Footer/>
