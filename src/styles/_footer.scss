@@ -46,6 +46,10 @@
         width: 70%;
         line-height: 1.7em;
         font-size: 0.9rem;
+        @media(max-width:768px){
+            margin-left: auto;
+            margin-right: auto;
+        }
         @media(min-width:769px){
         text-align: left;
             line-height: 2em;
@@ -59,17 +63,17 @@
     }
 }
 .footerbtn button{
-    padding: 0.7em;
+    // padding: 0.7em;
     color: #6a0dad;
     background-color: white;
-    box-shadow: 5px 5px #e9eaec;
-    height: 5em;
+    box-shadow: 3px 3px #e9eaec;
+    height: 4em;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     outline: none;
     transition: 0.3s ease;
-    margin-right:0 15px 2em 0;
+    margin:0 15px 1em 0;
     @media(min-width:769px){
     }
         @media(min-width:1850px){
