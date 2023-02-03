@@ -11,10 +11,12 @@
     justify-content: space-between;
     padding: 0 4em 0 2em;
     @media(min-width:769px){
-    height: 50vh;
+   height: fit-content;
+   padding-left: 1em;
     }
-        @media(min-width:1850px){
-            
+        @media(min-width:1150px){
+            height: 50vh;
+            padding: 0 4em 0 2em;
         }
       
     
