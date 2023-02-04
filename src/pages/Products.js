@@ -8,7 +8,7 @@ function Products() {
   return (
     <div>
            <Nav/>
-           {/* <Pricing/> */}
+           <Pricing/>
           <Footer/>
     </div>
   )

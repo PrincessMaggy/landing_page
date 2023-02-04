@@ -18,7 +18,7 @@ function About() {
             exit={{opacity:0}}
             >
          </motion.div>
-         {/* <Features/> */}
+         <Features/>
           <Footer/>
     </div>
   )
