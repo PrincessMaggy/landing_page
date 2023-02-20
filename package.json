@@ -2,7 +2,7 @@
   "name": "newapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://princessmaggy.github.io/newapp",
+  "homepage": "https://princessmaggy.github.io/landing_page",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
