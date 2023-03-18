@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/landing_page/static/css/main.f20dc7e1.css",
-    "main.js": "/landing_page/static/js/main.d7bb5466.js",
-    "static/js/787.ec78c698.chunk.js": "/landing_page/static/js/787.ec78c698.chunk.js",
+    "main.css": "/landing_page/static/css/main.be4841c2.css",
+    "main.js": "/landing_page/static/js/main.b5752b47.js",
+    "static/js/787.6606bfd5.chunk.js": "/landing_page/static/js/787.6606bfd5.chunk.js",
+    "static/media/phone.png": "/landing_page/static/media/phone.631e63adc39489a6e298.png",
     "static/media/home-hero.png": "/landing_page/static/media/home-hero.608f16b828a2f7653721.png",
     "static/media/services.png": "/landing_page/static/media/services.27dd2f0170bfa7290e1e.png",
+    "static/media/apple.svg": "/landing_page/static/media/apple.940c773cb052bb7bc89971abbc0aacd5.svg",
+    "static/media/playstore.svg": "/landing_page/static/media/playstore.dd84ccad94e66c86740e46dbc53c0285.svg",
+    "static/media/down-arrow.svg": "/landing_page/static/media/down-arrow.0bc8bc1a0bd1709e49cc048ad7b4c703.svg",
+    "static/media/twitter.svg": "/landing_page/static/media/twitter.bc89680df83826783865c586474cab55.svg",
     "static/media/bg-pattern-intro.svg": "/landing_page/static/media/bg-pattern-intro.bf6b3e1b727eabeffdc5.svg",
     "index.html": "/landing_page/index.html",
-    "main.f20dc7e1.css.map": "/landing_page/static/css/main.f20dc7e1.css.map",
-    "main.d7bb5466.js.map": "/landing_page/static/js/main.d7bb5466.js.map",
-    "787.ec78c698.chunk.js.map": "/landing_page/static/js/787.ec78c698.chunk.js.map"
+    "static/media/youtube.svg": "/landing_page/static/media/youtube.e902277c0a3382b06ab7948915fb8be5.svg",
+    "static/media/instagram.svg": "/landing_page/static/media/instagram.feb8b4becc003d0202d52e8eb84fcb09.svg",
+    "static/media/facebook.svg": "/landing_page/static/media/facebook.7311002f949c9d360c17ec49508a99b4.svg",
+    "main.be4841c2.css.map": "/landing_page/static/css/main.be4841c2.css.map",
+    "main.b5752b47.js.map": "/landing_page/static/js/main.b5752b47.js.map",
+    "787.6606bfd5.chunk.js.map": "/landing_page/static/js/787.6606bfd5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f20dc7e1.css",
-    "static/js/main.d7bb5466.js"
+    "static/css/main.be4841c2.css",
+    "static/js/main.b5752b47.js"
   ]
 }
