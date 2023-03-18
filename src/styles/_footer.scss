@@ -1,8 +1,13 @@
-.footer{
+.footer-container{
+    background-color: rgba(106, 13, 173,0.05);
+    text-align: center;
+    margin: 0;
+}.footer{
     display: flex;
     flex-direction: column;
-    height: fit-content;
-    background-color: rgba(249, 250, 252, 0.2);
+    height: auto;
+    // background-color: rgba(249, 250, 252, 0.2);
+   
     padding: 10vh 3em 0 2em;
 @media(min-width:769px){
         flex-direction: row;
@@ -14,87 +19,98 @@
     @media(min-width:1850px){
         }
 }
+
+
 .footerleft{
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
     width: 100%;
     text-align: center;
-   
+    flex-direction: column;
 
-    
     @media(min-width:769px){
-        padding: 4em 3em 0 3em;
-        width: 30%;
-        display: flex;
+        padding: 2em 0 0 0;
+        width: 50%;
         align-items: flex-start;
-        flex-direction: column;
     }
         @media(min-width:1150px){
-            padding: 0 3em 0 3em;
-            width: 30%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
+            // padding: 0 3em 0 3em;
+            // width: 30%;
         }
       
-    
-    .footerlink{
-        text-decoration: none;
     }
-    h2{
-        margin: 0;
-        padding: 0;
-    }
-    p{
-        width: 70%;
-        line-height: 1.7em;
-        font-size: 0.9rem;
-        @media(max-width:768px){
-            margin-left: auto;
-            margin-right: auto;
-        }
-        @media(min-width:769px){
-        text-align: left;
-            line-height: 2em;
-            margin-bottom: 2em;
-        }
-            @media(min-width:1850px){
-                
-            }
-          
-        
-    }
+.footerlogo{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    // padding-bottom: 0.5em;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
 }
-.footerbtn button{
+
+.footerbtn {
+
+    @media(min-width:769px){
+        text-align: left;
+    }
+button{
     // padding: 0.7em;
     color: #6a0dad;
     background-color: white;
     box-shadow: 3px 3px #e9eaec;
-    height: 4em;
+    height: 5em;
     border: none;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 50px;
     cursor: pointer;
     outline: none;
     transition: 0.3s ease;
-    margin:0 15px 1em 0;
+    margin:0 15px 2em 0;
     @media(min-width:769px){
     }
         @media(min-width:1850px){
             
         }
-    span{
-        display: block;
     }
+}
+.footerlink{
+    text-decoration: none;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+p{
+    width: 70%;
+    line-height: 1.7em;
+    font-size: 0.9rem;
+    @media(max-width:768px){
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media(min-width:769px){
+    text-align: left;
+        line-height: 2em;
+        margin-bottom: 2em;
+    }
+        @media(min-width:1850px){
+            
+        }
+      
+    
 }
 .footerright{
     flex-direction: column;
     // justify-content: center;
-    align-items: center;
+    // align-items: center;
     width: 100%;
     padding-top: 4em;
     text-align: center;
     display: flex;
+    
   
     @media(min-width:769px){
         padding-top: 0;
@@ -105,12 +121,10 @@
         align-content: space-between;
         text-align: left;
     }
-        @media(min-width:1850px){
-            
+        @media(min-width:1250px){
+            padding: 0;
+            margin: 0;
         }
-      
-    
-
 }
 .linkTitle{
     font-weight: 700;
@@ -124,15 +138,6 @@
         }
       
     
-}
-.footerlogo{
-    display: block;
-    text-decoration: none;
-    color: #333;
-    // padding-bottom: 0.5em;
-    transition: 0.3s ease;
-    cursor: pointer;
-    text-transform: uppercase;
 }
 .footerlink{
     display: block;
@@ -152,6 +157,16 @@
       
     
     &:hover{
-        text-decoration: underline;
+        color:#ff631c;
+    }
+}
+.copy{
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    @media(max-width:768px){
+        margin: 1.5rem 0 0 0;
     }
 }

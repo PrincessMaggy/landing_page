@@ -1,16 +1,20 @@
 .Nav{
     height: 4em;
-    padding: 0 1.5rem 0 5em;
+    padding: 0.7em 1.5rem 0 5em;
     transition: 0.3s ease;
     position: fixed;
     top: 0;
     width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
     background-color: rgb(106, 13, 173);
+    z-index: 1000;
    &.active{
     background-color: white;
-    z-index:1000;
+    // z-index:1000;
     box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    .arrow{
+        filter: invert(0.5);
+    }
     .navContainer #logo,.navlink,.toggle{
         color: rgb(106, 13, 173);
         font-weight: 700;
@@ -36,9 +40,11 @@
     display: flex;
     width: 30%;
     @media(max-width:768px){
-        width: 90%;
+        width: 115%;
         height: 15vh;
         justify-content: space-between;
+        align-items: baseline;
+        margin: 0;
     }
     @media(min-width: 769px){
         width: 15%;
@@ -51,7 +57,7 @@
     color: white;
     text-decoration: none;
     font-size: 1.8rem;
-    @media(min-width){
+    @media(min-width:769px){
         font-size: 2rem;
     }
 }
@@ -66,7 +72,6 @@
     }
     @media (max-width: 768px){
         display: block;
-        margin-top: 0.5em;
     }
 }
 
@@ -93,7 +98,7 @@ nav{
     }
     ul{
         display: flex;
-        width: 80%;
+        width: 100%;
         // flex-wrap: wrap;
         padding: 0 4rem 0 4rem;
         list-style: none;
@@ -104,12 +109,13 @@ nav{
             width: 100%;
             padding: 0;
             margin: 0;
-            height: 50%;
+            height: 70%;
             // align-items: center;     
      }
     }
     li{
         list-style: none;
+        position: relative;
     }
     .navlink{
         color: white;
@@ -120,38 +126,62 @@ nav{
             font-size: 1rem;
         }
         &:hover{
-            text-decoration: underline;
+            color: #ff631c;
         }
     }
     
 }
-.navbtn{
-    background-color: #ff631c;
+
+.arrow{
+    margin-left: 4px;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-    width: 10em;
-    height: 3em;
-    transition: 0.3s ease all;
-    @media(max-width:768px){
-        margin: 3em 0 10px 0;
-        padding: 0;
-    }
+    width:15px;
+    border-radius: 50%;
+}
+
+
+
+
+// submenu styling (first mobile design)
+.sub-menu{
+    display: block;
+    position: absolute;
+    top: 35px;
+    background-color: white;
+    height: auto;
+    width: 60vw;
+    display: flex;
+    overflow: initial;
+    flex-direction: column;
+    box-shadow: rgba(0,0,0,0.45) 20px 25px 20px -20px;
+    border-radius: 15px;
+    padding: 1em 0 1em 1em;
+    align-content: space-between;
+    z-index: 1;
+    flex-wrap: wrap;
     @media(min-width:769px){
-    font-size: 1rem;
-    }
-        @media(min-width:1850px){
-            
-        }
-      
-    
-    &:hover{
-        border: 0.5px solid transparent;
-        border-color: white;
-        background-color: inherit;
-        color: white;
+        width: 20vw;
     }
    
+    .grid{
+    @media(min-width:769px){
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 2vw;
+    }
+}
+    h3{
+        font-weight: 700;
+        margin-bottom: 1em;
+        font-size: 1rem;
+    }
+    li{
+        list-style: none;
+        margin-bottom: 1em;
+        transition: 0.3s ease;
+        a{
+            color:rgb(106, 13, 173);
+        }
+        
+    }
 }
