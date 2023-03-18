@@ -1,11 +1,15 @@
 import React from 'react';
 import Nav from '../components/Nav';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Footer from '../components/Footer';
 import {motion} from 'framer-motion'
 
 function Career() {
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+
   const[submenu, setsubmenu]= useState(false);
   const[submenu1, setsubmenu1]= useState(false);
 

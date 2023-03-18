@@ -3,10 +3,14 @@ import Nav from '../components/Nav';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
 import {motion} from 'framer-motion'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+
   const[submenu, setsubmenu]= useState(false);
   const[submenu1, setsubmenu1]= useState(false);
 
