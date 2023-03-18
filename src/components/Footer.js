@@ -51,28 +51,28 @@ function Footer() {
             <div className="company">
               <p className="linkTitle">Company</p>
               <Link  className='footerlink' to="/about">About Us</Link> 
-              <Link  className='footerlink' to="/newapp">Career</Link>
-              <Link  className='footerlink' to="/newapp">Business</Link> 
+              <Link  className='footerlink' to="/landing_page">Career</Link>
+              <Link  className='footerlink' to="/landing_page">Business</Link> 
             </div>
             <div className="support">
               <p className="linkTitle">Support</p>
-              <Link  className='footerlink' to="/newapp">Policies </Link> 
-              <Link  className='footerlink' to="/newapp">Learn</Link> 
-              <Link  className='footerlink' to="/newapp">FAQ</Link>
+              <Link  className='footerlink' to="/landing_page">Policies </Link> 
+              <Link  className='footerlink' to="/landing_page">Learn</Link> 
+              <Link  className='footerlink' to="/landing_page">FAQ</Link>
             </div>
             <div className="products">
               <p className="linkTitle">Products</p>
-              <Link  className='footerlink' to="/newapp">Gift Cards</Link> 
-              <Link  className='footerlink' to="/newapp">Airtime To Cash</Link> 
-              <Link  className='footerlink' to="/newapp">Refill</Link>
+              <Link  className='footerlink' to="/landing_page">Gift Cards</Link> 
+              <Link  className='footerlink' to="/landing_page">Airtime To Cash</Link> 
+              <Link  className='footerlink' to="/landing_page">Refill</Link>
             </div>
             <div className= "contact">
               <p className="linkTitle">Contact</p>
-              <Link  className='footerlink' to="/newapp">hello@newapp.com </Link> 
+              <Link  className='footerlink' to="/landing_page">hello@landing_page.com </Link> 
               {/*icons  */}
             </div>
       </div>
-  {/* <p>(c) newapp 2023</p> */}
+  {/* <p>(c) landing_page 2023</p> */}
       
     </div>
   )

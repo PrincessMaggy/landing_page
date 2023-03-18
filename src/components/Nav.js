@@ -93,7 +93,7 @@ const item={
           <motion.div variants={stagger} className='navContainer'>
           <div className='logoham'>
             <motion.h2 variants={header}>
-                  <Link id="logo" to="/newapp" className='navlink'>Logo</Link> 
+                  <Link id="logo" to="/landing_page" className='navlink'>Logo</Link> 
             </motion.h2>
             <motion.div 
               variants={item}
