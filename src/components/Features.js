@@ -11,7 +11,7 @@ import {
 } from './FeatureStyles';
 import { featuresData } from '../data/FeaturesData';
 
-const Features = () => {
+const Features = (props) => {
 	const initial = {
 		y: 40,
 		opacity: 0,
@@ -22,7 +22,7 @@ const Features = () => {
 	};
 
 	return (
-		<Section smPadding="50px 10px" position="relative" inverse id="about" style={{marginTop:'4em',backgroundColor:'rgb(106, 13, 173)'}}>
+		<Section onClick={props.toggleall} smPadding="50px 10px" position="relative" inverse id="about" style={{marginTop:'4em',backgroundColor:'rgb(106, 13, 173)'}}>
 			<Container>
 				<FeatureTextWrapper>
 					<FeatureTitle>What We Offer</FeatureTitle>

@@ -15,9 +15,9 @@ import {
 } from './PricingStyles';
 import { pricingData } from '../data/PricingData';
 
-function Pricing() {
+function Pricing(props) {
 	return (
-		<IconContext.Provider value={{ color: 'rgb(106, 13, 173)', size: '1rem' }}>
+		<IconContext.Provider onClick={props.toggleall} value={{ color: 'rgb(106, 13, 173)', size: '1rem' }}>
 			<PricingSection id="pricing">
 				<PricingWrapper>
 					<Heading>Pick Your Best Option</Heading>

@@ -14,7 +14,7 @@ import {
 import { Container } from '../globalStyles';
 import validateForm from './validateForm';
 
-const Form = () => {
+const Form = (props) => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
@@ -60,7 +60,7 @@ const Form = () => {
 		},
 	];
 	return (
-		<FormSection>
+		<FormSection onClick={props.toggleall}>
 			<Container>
 				<FormRow>
 					<FormColumn small>

@@ -4,11 +4,12 @@ import {BiMenuAltRight} from 'react-icons/bi';
 import {AiOutlineClose} from 'react-icons/ai';
 import {Link} from 'react-router-dom';
 import {motion, AnimatePresence} from 'framer-motion'
+import arrow from '../img/down-arrow.svg'
 
-function Nav() {
+function Nav(props) {
 const [menu, setMenu] = useState(false);
-
 const [navbar, setNavbar] = useState(false);
+
 
 
 const changeBackground = ()=>{
@@ -53,22 +54,6 @@ const header={
   }
 }
 
-const btnGroup ={
-  initial:{
-    y:-60,
-    opacity:0,
-    transition:{duration:0.05, ease:easing}
-  },
-  animate:{
-    y:0,
-    opacity:1,
-    animation:{
-      duration:0.6,
-      ease:easing
-    }
-  }
-}
-
 const item={
   exit:{
     opacity:0,
@@ -91,7 +76,8 @@ const item={
     <AnimatePresence>
         { setMenu && (
           <motion.div variants={stagger} className='navContainer'>
-          <div className='logoham'>
+          <div className='logoham' 
+    onClick={props.toggleall}>
             <motion.h2 variants={header}>
                   <Link id="logo" to="/landing_page" className='navlink'>Logo</Link> 
             </motion.h2>
@@ -150,32 +136,151 @@ const item={
                           ease:"easeInOut",
                           delay:.6
                         }
-                    }}><Link  className='navlink' to="/products">Products</Link> </motion.li>
-
-                <motion.li 
-                className='li'
-                initial={{y:80,opacity:0}}
+                    }}><Link  className='navlink' to="" onClick={props.togglesubmenu}>Products
+                    <img src={arrow} alt="arrow" className='arrow'/>
+                    </Link>
+                    
+                   {props.submenu && (
+                    <motion.ul className='sub-menu'>
+                    <div className='sub-container'>
+                    <motion.h3 initial={{y:80,opacity:0}}
                     animate={{y:0, opacity:1}}
-                    transition={{delay:.5}}
+                    transition={{delay:.3}}
                     exit={{
                       opacity:0,
                       y:90,
                         transition:{
                           ease:"easeInOut",
-                          delay:.4
+                          delay:.3
                         }
-                    }}><Link  className='navlink' to="/contact">SignUp</Link> </motion.li>
+                    }}>Our Products</motion.h3>
+                    <div className='grid'>
+                      <motion.li initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.3}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.3
+                        }
+                    }}><Link  className='navlink' to="">Refill</Link></motion.li>
+                      <motion.li initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.3}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.3
+                        }
+                    }}><Link  className='navlink' to="">Airtime</Link></motion.li>
+                      <motion.li initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.3}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.3
+                        }
+                    }}><Link  className='navlink' to="">Gift card</Link></motion.li>
+                      <motion.li initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.3}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.3
+                        }
+                    }}><Link  className='navlink' to="">Shopping</Link></motion.li>
+                    </div>
+                    </div>
+                    </motion.ul>)} 
+                   </motion.li>
 
+                    
+                <motion.li
+                className='li'
+                 initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.6}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.6
+                        }
+                    }}><Link  className='navlink' to=""  onClick={props.togglesubmenu1}>Resources  
+                    <img src={arrow} className="arrow" alt="arrow"/>
+                    </Link>
+                     
+                     {props.submenu1 && (
+                      <motion.ul className='sub-menu'>
+                    <motion.h3 initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.3}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.3
+                        }
+                    }}>Our Resources</motion.h3>
+                      <motion.li className='li'
+                 initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.3}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.3
+                        }
+                    }}><Link  className='navlink' to="" >FAW</Link></motion.li>
+                      <motion.li className='li'
+                 initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.3}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.3
+                        }
+                    }}><Link  className='navlink' to="">Learn</Link></motion.li>
+                    </motion.ul>
 
+                     )} 
+
+                   </motion.li>
+
+                    
+                <motion.li
+                className='li'
+                 initial={{y:80,opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    transition={{delay:.6}}
+                    exit={{
+                      opacity:0,
+                      y:90,
+                        transition:{
+                          ease:"easeInOut",
+                          delay:.6
+                        }
+                    }}><Link  className='navlink' to="/products">Business</Link> </motion.li>
                 
                 </motion.ul>
-                <motion.div 
-                variants={btnGroup}
-            whileHover={{scale:1.05}}
-            whileTap={{scale:0.95}}
-            >
-                    <button className='navbtn'>Get Started</button>
-                </motion.div>
+            
             </motion.nav>
 
 

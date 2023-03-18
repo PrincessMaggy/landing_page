@@ -5,7 +5,7 @@ import { IoMailOutline, IoChevronForward, IoApps, IoNotifications,IoPieChart, Io
 import {motion} from 'framer-motion'
 
 
-function Card() {
+function Card(props) {
 
     let easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -56,7 +56,7 @@ function Card() {
 
 
   return (
-    <motion.div className='service_container'>
+    <motion.div className='service_container'  onClick={props.toggleall}>
         <motion.div variants={title} className='title_wrapper'>
             <motion.span 
             className='service_title'
@@ -181,6 +181,21 @@ function Card() {
             </motion.div>
 
             
+            <motion.div className='card' variants={item}>
+                <motion.span variants={hoverEffect} whileHover="whileHover"  className='service_icon' style={{backgroundColor:"#fff"}}>
+                    <IconContext.Provider value={{color: "#ff631c", size:"25px"}}>
+                        <IoCard/>
+                    </IconContext.Provider>
+                </motion.span>
+                <h3>Lorem ipsum dolor dolultricies<br/> lorem ipsum</h3>
+                <a href='#home'>
+                    <span>learn more</span>
+                    <IconContext.Provider value={{color:"#ff631c", size:"18px"}}>
+                        <IoChevronForward/>
+                    </IconContext.Provider>
+                </a>
+            </motion.div>
+
             <motion.div className='card' variants={item}>
                 <motion.span variants={hoverEffect} whileHover="whileHover"  className='service_icon' style={{backgroundColor:"#fff"}}>
                     <IconContext.Provider value={{color: "#ff631c", size:"25px"}}>

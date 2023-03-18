@@ -5,25 +5,9 @@ import {motion} from 'framer-motion'
 import { IconContext } from 'react-icons/lib';
 import {IoStar} from 'react-icons/io5'
 
-function Banner() {
-    let easing = [0.6, -0.05, 0.01, 0.99];
+function Banner(props) {
     
-      const btnGroup ={
-        initial:{
-          y:-60,
-          opacity:0,
-          transition:{duration:0.05, ease:easing}
-        },
-        animate:{
-          y:0,
-          opacity:1,
-          animation:{
-            duration:0.6,
-            ease:easing
-          }
-        }
-      }
-      
+    
       const stagger = {
         animate:{
           transition:{
@@ -39,7 +23,7 @@ function Banner() {
       
 
   return (
-    <div>
+    <div  onClick={props.toggleall}>
             <div  initial= 'initial' 
                 animate='animate'
                 className="main">
@@ -51,7 +35,7 @@ function Banner() {
                     <p >Lorem ipsum dolultricies neque sed rhoncus. Integer consequat aliquet aliquet. Quisque aliquam feugiat mauris, 
                     eu fringilla dolor eleifend id. Proin nibh dui, dictum nec enim eu, posuere dapibus nulla. Proin interdu </p>
                     <motion.div 
-                      variants={btnGroup}
+                      variants={props.btnGroup}
                       whileHover={{scale:1.05}}
                       whileTap={{scale:0.95}}
                       >
